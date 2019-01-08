@@ -9,8 +9,14 @@ public class MainMenuInstaller : MonoInstaller<LevelInstaller>
 	private SFXModel m_sfxModel;
 	[SerializeField]
 	private VolumeModel m_volumeModel;
+
+	[Space]
 	[SerializeField]
 	private SceneModel m_sceneModel;
+
+	[Space]
+	[SerializeField]
+	private MainMenu_ButtonsHandler m_buttonsHandler;
 
 	/* ---------------------------------------------------------------------------------------- */
 
@@ -23,6 +29,7 @@ public class MainMenuInstaller : MonoInstaller<LevelInstaller>
 
 		Container.Bind<SceneModel.Setter>().FromInstance(m_sceneModel);
 
+		Container.Bind<MainMenu_ButtonsHandler.Setter>().FromInstance(m_buttonsHandler);
 
 	}
 

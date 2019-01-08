@@ -43,11 +43,9 @@ public class LevelInstaller : MonoInstaller<LevelInstaller>,
 	}
 
 	public void InjectPrefab(GameObject prefab, GameObject parent) {
-		if(prefab == null) {
-			return;
+		if(prefab != null) {
+			InjectPrefab(Instantiate(prefab, parent.transform.position, parent.transform.rotation));	
 		}
-
-		InjectPrefab(Instantiate(prefab, parent.transform.position, parent.transform.rotation));
 	}
 
 	/* ---------------------------------------------------------------------------------------- */
