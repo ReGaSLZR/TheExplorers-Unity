@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 88af67d7e78984925a31fd7a7f779ae9
+timeCreated: 1546083706
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 888_clean_sound
+  fontNames:
+  - 888_clean_sound
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

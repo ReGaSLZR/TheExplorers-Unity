@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev1-4
+  m_EditorClassIdentifier: 
+  m_question: What are some things that you can do to help save the rainforests of
+    the world?
+  m_choices:
+  - m_choiceValue: Go to the rainforest and meet the people who live there.
+    m_isCorrect: 0
+  - m_choiceValue: Visit the zoo to learn about the animals that live in the rainforest.
+    m_isCorrect: 0
+  - m_choiceValue: Nothing. Too many of the trees are already gone.
+    m_isCorrect: 0
+  - m_choiceValue: Use fewer of the products made from trees, such as paper, napkins,
+      paper towels, or disposable paper plates and cups.
+    m_isCorrect: 1
+  m_explanation: "Companies who purchase trees to make their products will stop using
+    as many trees if people stop buying their products. Anything made from paper has
+    come from a tree. If you have to use a paper product, try to use recycled paper.
+    While we haven\u2019t found a complete substitute for using trees to make paper
+    products, we can try to use less of them. This means that fewer trees will be
+    cut down."
+  m_rewardHealth: 0
+  m_rewardMindLight: 3
+  m_rewardScore: 100

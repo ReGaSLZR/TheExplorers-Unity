@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: fd96b65c079b54fd39a55ad8357413fd
+timeCreated: 1546083798
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Manga Speak
+  fontNames:
+  - Manga Speak
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cf2c3deefe3d84805b2b39a9ad786815, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev1-3
+  m_EditorClassIdentifier: 
+  m_question: Why is protecting the trees in the rainforest important?
+  m_choices:
+  - m_choiceValue: The wood is perfect for building furniture and cannot be found
+      anywhere else.
+    m_isCorrect: 0
+  - m_choiceValue: Many of the people living in rainforests would starve.
+    m_isCorrect: 0
+  - m_choiceValue: The rainforest is home to over 30 million types of animals and
+      plants, some that provide medicine to cure very bad illnesses.
+    m_isCorrect: 1
+  - m_choiceValue: The trees are some of the oldest on the planet and deserve to live.
+    m_isCorrect: 0
+  m_explanation: "Scientists believe that rainforests took almost 100 million years
+    to develop. They are some of the oldest ecosystems on Earth. Half of the Earth\u2019s
+    wildlife and nearly all of the plant life live in the rainforest."
+  m_rewardHealth: 0
+  m_rewardMindLight: 3
+  m_rewardScore: 100
