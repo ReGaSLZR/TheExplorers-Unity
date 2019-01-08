@@ -26,5 +26,5 @@ MonoBehaviour:
     fishing. Many of those fishing practices include blowing up the reef, banging
     on the reef, poisoning the reef, or dragging scoops across the bottom.
   m_rewardHealth: 0
-  m_rewardMindLight: 5
+  m_rewardMindLight: 2
   m_rewardScore: 100

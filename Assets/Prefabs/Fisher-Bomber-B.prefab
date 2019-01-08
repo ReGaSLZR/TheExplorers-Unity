@@ -158,8 +158,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273388956337656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 349.98212, y: 3.6, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 715.5, y: -1.6, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4310916475165544}
   m_Father: {fileID: 0}
@@ -172,8 +172,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661492811611690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.41, y: -1.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -16.83, y: 0.88, z: 0}
+  m_LocalScale: {x: 1.7672467, y: 1.7672465, z: 1.7672465}
   m_Children:
   - {fileID: 4954728466153420}
   - {fileID: 4646345277091302}
@@ -569,7 +569,7 @@ MonoBehaviour:
   destroyOnKill: 1
   prefabDestroySub: {fileID: 1715394194653612, guid: 11aca8b57e06244198bf87502a7ba099,
     type: 2}
-  delayStart: 0.1
+  delayStart: 0.01
   delayEnd: 0.3
   clipAttack: {fileID: 0}
   animationAttack: 

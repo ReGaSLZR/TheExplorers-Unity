@@ -72,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1113047980167098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 142.45, y: 20.86, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 142.4, y: 20.86, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4352538229005970}
   m_Father: {fileID: 0}
@@ -298,8 +298,8 @@ MonoBehaviour:
   animationPatrol: isPatroling
   patrolDirection: 0
   canTurnAround: 1
-  patrolPointLesser: 122.2
-  patrolPointGreater: 172.1
+  patrolPointLesser: 118
+  patrolPointGreater: 167.1
 --- !u!114 &114614615760715634
 MonoBehaviour:
   m_ObjectHideFlags: 1

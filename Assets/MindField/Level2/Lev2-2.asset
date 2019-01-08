@@ -25,5 +25,5 @@ MonoBehaviour:
     waters have caused reefs to begin dying. It is called bleaching and it's happening
     all over the planet."
   m_rewardHealth: 0
-  m_rewardMindLight: 5
+  m_rewardMindLight: 2
   m_rewardScore: 100

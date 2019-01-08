@@ -25,5 +25,5 @@ MonoBehaviour:
     contribution by anyone not living near the ocean is the amount of pollution that
     finds its way into the waterways. Most waterways lead to the ocean, eventually.
   m_rewardHealth: 0
-  m_rewardMindLight: 5
+  m_rewardMindLight: 2
   m_rewardScore: 100

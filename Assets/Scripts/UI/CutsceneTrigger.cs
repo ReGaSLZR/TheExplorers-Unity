@@ -21,6 +21,10 @@ public class CutsceneTrigger : MonoBehaviour
 
 	private bool isTriggered;
 
+	private void Awake() {
+		isTriggered = false;
+	}
+
 	private void OnEnable() {
 		m_cutsceneModelGetter.GetIsDone()
 			.Where(isDone => (isDone && isTriggered))
@@ -31,7 +35,7 @@ public class CutsceneTrigger : MonoBehaviour
 			.AddTo(this);
 
 		this.OnCollisionEnter2DAsObservable()
-			.Where(collision => TagUtil.IsTagPlayer(collision.gameObject.tag))
+			.Where(collision => (TagUtil.IsTagPlayer(collision.gameObject.tag) && (!isTriggered)))
 			.Subscribe(_ => {
 				isTriggered = true;
 

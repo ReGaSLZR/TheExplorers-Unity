@@ -27,5 +27,5 @@ MonoBehaviour:
     used as bricks or for filling in potholes on roads. There are other, better, materials
     to do this with, so there is no need to ruin the reefs for such activity.
   m_rewardHealth: 0
-  m_rewardMindLight: 5
+  m_rewardMindLight: 2
   m_rewardScore: 100
