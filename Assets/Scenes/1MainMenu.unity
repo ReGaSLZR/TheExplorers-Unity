@@ -1113,6 +1113,7 @@ GameObject:
   - component: {fileID: 1371159707}
   - component: {fileID: 1371159711}
   - component: {fileID: 1371159710}
+  - component: {fileID: 1371159712}
   m_Layer: 0
   m_Name: '--- EVENT SYSTEM ---'
   m_TagString: Untagged
@@ -1202,6 +1203,17 @@ MonoBehaviour:
   _contractNames: []
   _parentContractName: 
   _parentContractNames: []
+--- !u!114 &1371159712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371159706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0ff1465afe54dd482f6d334fc39cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1438584641
 GameObject:
   m_ObjectHideFlags: 0
