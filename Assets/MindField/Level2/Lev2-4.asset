@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev2-4
+  m_EditorClassIdentifier: 
+  m_question: Which of the following are also practices that contribute to coral reef
+    death?
+  m_choices:
+  - m_choiceValue: Conservation.
+    m_isCorrect: 0
+  - m_choiceValue: Restrictions on diving near coral reefs.
+    m_isCorrect: 0
+  - m_choiceValue: Research.
+    m_isCorrect: 0
+  - m_choiceValue: Selling corals to tourists.
+    m_isCorrect: 1
+  m_explanation: Not only are live corals sold as souvenirs to tourists in different
+    parts of the world, they are also removed to be used as cement for buildings,
+    used as bricks or for filling in potholes on roads. There are other, better, materials
+    to do this with, so there is no need to ruin the reefs for such activity.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100

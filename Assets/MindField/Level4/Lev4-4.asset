@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev4-4
+  m_EditorClassIdentifier: 
+  m_question: Which of the following does NOT contribute to the tigers' threatened
+    existence?
+  m_choices:
+  - m_choiceValue: Chinese medicine production.
+    m_isCorrect: 0
+  - m_choiceValue: Increased farming.
+    m_isCorrect: 0
+  - m_choiceValue: Continued study of tigers in the wild.
+    m_isCorrect: 1
+  - m_choiceValue: Poaching for their skins.
+    m_isCorrect: 0
+  m_explanation: Scientists continue to study wild tigers but it has become increasingly
+    difficult to find them. Many researchers believe that tigers will have to adapt
+    to live in different habitats in order to survive. This may mean that in the future
+    you may see tigers living in the desert or in snow covered mountains. Some already
+    are living this way.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100

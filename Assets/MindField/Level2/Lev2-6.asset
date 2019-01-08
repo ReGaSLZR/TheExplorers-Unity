@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev2-6
+  m_EditorClassIdentifier: 
+  m_question: How can one person make a difference to the coral reefs?
+  m_choices:
+  - m_choiceValue: Speak up and do not support those companies who contribute to reef
+      death.
+    m_isCorrect: 1
+  - m_choiceValue: Learn more.
+    m_isCorrect: 0
+  - m_choiceValue: Read a lot.
+    m_isCorrect: 0
+  - m_choiceValue: Set up a website.
+    m_isCorrect: 0
+  m_explanation: If each person made a point to limit the use of sunscreens that have
+    oxybenzone, which is lethal to reefs, then it would be a start. Saying something,
+    making sure that those in charge understand that you are not okay with this happening
+    is when change and protection begin to take place on a larger scale.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100

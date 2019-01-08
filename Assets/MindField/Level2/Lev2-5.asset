@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev2-5
+  m_EditorClassIdentifier: 
+  m_question: How do cities, many miles away from the ocean, cause reef death?
+  m_choices:
+  - m_choiceValue: By not doing anything.
+    m_isCorrect: 0
+  - m_choiceValue: Polluting waterways that make their way to the ocean.
+    m_isCorrect: 1
+  - m_choiceValue: They employ the workers who are killing the reefs.
+    m_isCorrect: 0
+  - m_choiceValue: They do not enact laws to protect the reefs.
+    m_isCorrect: 0
+  m_explanation: While all of the choices have an element of truth in them, the largest
+    contribution by anyone not living near the ocean is the amount of pollution that
+    finds its way into the waterways. Most waterways lead to the ocean, eventually.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100

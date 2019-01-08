@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev3-2
+  m_EditorClassIdentifier: 
+  m_question: "Which of the following do NOT contribute to the Bactrian camel\u2019s
+    threatened existence?"
+  m_choices:
+  - m_choiceValue: Use by farmers.
+    m_isCorrect: 1
+  - m_choiceValue: For food.
+    m_isCorrect: 0
+  - m_choiceValue: Wolves at watering holes.
+    m_isCorrect: 0
+  - m_choiceValue: Drought.
+    m_isCorrect: 0
+  m_explanation: Many farmers use them as domestic animals and treat them kindly.
+    However, many of the watering holes, where wolves lie in wait, cause great damage
+    to wild camel herds. Hunters and the continued prolonged droughts also mean that
+    unless something changes soon, there will be no more camels in the wild in the
+    next 50 years.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100

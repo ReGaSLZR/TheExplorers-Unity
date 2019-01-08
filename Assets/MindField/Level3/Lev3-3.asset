@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fda3af0dcb14e60863a37b036ec982, type: 3}
+  m_Name: Lev3-3
+  m_EditorClassIdentifier: 
+  m_question: Which of the following are humans NOT doing to protect the camels?
+  m_choices:
+  - m_choiceValue: Building homes.
+    m_isCorrect: 0
+  - m_choiceValue: Destroying existing oasis.
+    m_isCorrect: 0
+  - m_choiceValue: Hunting camels or shooting them as pests.
+    m_isCorrect: 0
+  - m_choiceValue: Setting up of camel preserves where they can live peacefully.
+    m_isCorrect: 1
+  m_explanation: A combination of factors are pushing the Bactrian camel towards extinction.
+    Human impact on an already harsh environment continue to make it difficult for
+    camels to find enough food, water and shelter to survive. Domestic animals, such
+    as cattle and horses, compete with camels for the sparse grasslands available
+    near the oasis.
+  m_rewardHealth: 0
+  m_rewardMindLight: 5
+  m_rewardScore: 100
