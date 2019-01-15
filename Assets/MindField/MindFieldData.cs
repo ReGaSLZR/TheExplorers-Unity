@@ -11,14 +11,8 @@ public class MindFieldData : ScriptableObject {
 	[TextArea]
 	public string m_explanation;
 
-	[Header("Rewards")]
-
-	[Range(0, 3)]
-	public int m_rewardHealth = 0;
-	[Range(0, 3)]
-	public int m_rewardMindLight = TheExplorersConfig.MINDLIGHT_MAX;
-	[Range(0, 100)]
-	public int m_rewardScore = 100;
+	[Header("Reward")]
+	public MindFieldReward m_reward;
 
 	//Knuth shuffle
 	public void ShuffleChoices() {

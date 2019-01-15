@@ -25,6 +25,4 @@ MonoBehaviour:
     their humps converts to water and food within their bodies. This incredible ability
     has allowed camels to live for thousands of years in the desert. They can go for
     months without eating or drinking if they have to!
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 2d9f9aba82b23465389a70e4cfe40444, type: 2}

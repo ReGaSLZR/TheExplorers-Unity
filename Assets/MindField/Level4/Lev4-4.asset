@@ -27,6 +27,4 @@ MonoBehaviour:
     to live in different habitats in order to survive. This may mean that in the future
     you may see tigers living in the desert or in snow covered mountains. Some already
     are living this way.
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: f0ae13a5cac114f6aa627638b806d224, type: 2}

@@ -23,6 +23,4 @@ MonoBehaviour:
     m_isCorrect: 0
   m_explanation: "Deserts make up about one quarter of the surface of the Earth. That\u2019s
     almost 13 million square miles with more than 500 million people living there."
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 2d9f9aba82b23465389a70e4cfe40444, type: 2}

@@ -32,6 +32,7 @@ public class TMPMindFieldChoice : MonoBehaviour {
 	private ReactiveProperty<bool> m_isChoiceCorrect;
 
 	private MindFieldChoice m_choice;
+	private MindFieldReward m_reward;
 	private DateTimeOffset m_lastClicked;
 
 	public TMPMindFieldChoice() {
@@ -50,8 +51,8 @@ public class TMPMindFieldChoice : MonoBehaviour {
 			.Where(x => x.Timestamp > m_lastClicked.AddSeconds(CLICK_INTERVAL))
 			.Subscribe(x => {
 				if(m_choice.m_isCorrect) {
-					m_playerStats.AddMindLight(TheExplorersConfig.MINDLIGHT_MAX);
-					m_playerStats.AddScore(TheExplorersConfig.SCORE_INCREMENT);
+					m_playerStats.AddMindLight(m_reward.m_mindLight);
+					m_playerStats.AddScore(m_reward.m_score);
 				}
 
 				m_sfxModel.PlaySFX(m_choice.m_isCorrect ? m_sfxClick_Correct : m_sfxClick_Wrong);
@@ -64,6 +65,14 @@ public class TMPMindFieldChoice : MonoBehaviour {
 	public void SetChoice(MindFieldChoice choice) {
 		m_choice = choice;
 		m_choiceValue.text = choice.m_choiceValue;
+	}
+
+	public void SetReward(MindFieldReward reward) {
+		if(reward == null) {
+			LogUtil.PrintError(this.gameObject, this.GetType(), "SetReward(): Whoops! Reward value is NULL.");
+		}
+
+		m_reward = reward;
 	}
 	
 	public ReactiveProperty<bool> GetIsCorrectAnswerClicked() {

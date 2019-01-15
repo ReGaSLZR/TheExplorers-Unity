@@ -25,6 +25,4 @@ MonoBehaviour:
     a time. Afterwards, if there are any leftovers, they will stash the meat and come
     back to it over several days. Once a tiger has made a substantial kill, he or
     she will not hunt again for 4 or 5 days.
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: f0ae13a5cac114f6aa627638b806d224, type: 2}

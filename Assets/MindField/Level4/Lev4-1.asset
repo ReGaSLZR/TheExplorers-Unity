@@ -15,19 +15,16 @@ MonoBehaviour:
   m_choices:
   - m_choiceValue: 10%
     m_isCorrect: 0
-  - m_choiceValue: 30%
-    m_isCorrect: 0
   - m_choiceValue: 75%
+    m_isCorrect: 0
+  - m_choiceValue: 30%
     m_isCorrect: 0
   - m_choiceValue: 95%
     m_isCorrect: 1
   m_explanation: "95% means that nearly all of the tiger\u2019s original habitat is
     now gone. Tigers are considered apex predators and keep other species under control.
-    They keep the area from disease and plants from growing out of control. Without
-    tigers, prey animals would overpopulate areas and bring disease to humans. The
-    prey animals, if left unchecked, would also devastate vegetation that keeps erosion
-    from occurring and produces the oxygen we breathe. When tigers are protected,
-    much more is protected at the same time."
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+    They keep areas from disease and plants from growing out of control. Without tigers,
+    prey animals would overpopulate areas and bring disease to humans. The prey, if
+    left unchecked, would also devastate vegetation that keeps erosion from occurring
+    and produces the oxygen we breathe. When we protect tigers, much more is protected."
+  m_reward: {fileID: 11400000, guid: f0ae13a5cac114f6aa627638b806d224, type: 2}

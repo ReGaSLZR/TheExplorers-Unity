@@ -16,7 +16,7 @@ public class MainMenuInstaller : MonoInstaller<LevelInstaller>
 
 	[Space]
 	[SerializeField]
-	private MainMenu_ButtonsHandler m_buttonsHandler;
+	private MainMenu_PanelModel m_panelModel;
 
 	/* ---------------------------------------------------------------------------------------- */
 
@@ -29,7 +29,7 @@ public class MainMenuInstaller : MonoInstaller<LevelInstaller>
 
 		Container.Bind<SceneModel.Setter>().FromInstance(m_sceneModel);
 
-		Container.Bind<MainMenu_ButtonsHandler.Setter>().FromInstance(m_buttonsHandler);
+		Container.Bind<MainMenu_PanelModel.Setter>().FromInstance(m_panelModel);
 
 	}
 

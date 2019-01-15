@@ -24,6 +24,4 @@ MonoBehaviour:
   m_explanation: Tiger stripes are like human fingerprints. All of them are slightly
     different from each other, allowing scientists to keep track of tigers throughout
     their life span.
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: f0ae13a5cac114f6aa627638b806d224, type: 2}

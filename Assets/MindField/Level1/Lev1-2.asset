@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_question: "How do the rainforests affect the Earth\u2019s climate?"
   m_choices:
+  - m_choiceValue: They help to create greenhouse gases that all life needs to survive.
+    m_isCorrect: 0
   - m_choiceValue: They keep the Earth from overheating and creating bad weather patterns.
     m_isCorrect: 1
   - m_choiceValue: Rainforests produce carbon dioxide that helps air pollution.
-    m_isCorrect: 0
-  - m_choiceValue: They help to create greenhouse gases that all life needs to survive.
     m_isCorrect: 0
   - m_choiceValue: Rainforests help to heat the Earth beyond the safe zone.
     m_isCorrect: 0
@@ -27,6 +27,4 @@ MonoBehaviour:
     Earth to overheat. Rainforests also affect weather conditions and by making the
     overall temperature of the planet healthy. This is why cutting down the trees
     in the rainforest is bad for everyone."
-  m_rewardHealth: 0
-  m_rewardMindLight: 3
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: d97d4c309ada0489cac401c66d6ee14f, type: 2}

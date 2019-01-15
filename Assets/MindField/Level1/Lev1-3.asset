@@ -26,6 +26,4 @@ MonoBehaviour:
   m_explanation: "Scientists believe that rainforests took almost 100 million years
     to develop. They are some of the oldest ecosystems on Earth. Half of the Earth\u2019s
     wildlife and nearly all of the plant life live in the rainforest."
-  m_rewardHealth: 0
-  m_rewardMindLight: 3
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: d97d4c309ada0489cac401c66d6ee14f, type: 2}

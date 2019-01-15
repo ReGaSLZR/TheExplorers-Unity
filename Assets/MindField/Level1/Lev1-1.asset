@@ -13,13 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_question: Why is saving the rainforest so important?
   m_choices:
-  - m_choiceValue: "Without it, we wouldn\u2019t have any rain or forests."
-    m_isCorrect: 0
-  - m_choiceValue: The rainforests are like the lungs of the planet.
-    m_isCorrect: 1
   - m_choiceValue: Polar bears live there.
     m_isCorrect: 0
   - m_choiceValue: "It produces most of the world\u2019s oil supply."
+    m_isCorrect: 0
+  - m_choiceValue: The rainforests are like the lungs of the planet.
+    m_isCorrect: 1
+  - m_choiceValue: "Without it, we wouldn\u2019t have any rain or forests."
     m_isCorrect: 0
   m_explanation: "Rainforests act like our body\u2019s lungs by taking in carbon dioxide,
     a gas that is bad for humans, and producing oxygen which we all need to survive.
@@ -28,6 +28,4 @@ MonoBehaviour:
     the world's rainforests are vanishing because the trees are being cut. Nearly
     6000 acres are cut every hour, which is about the size of 4000 football fields
     an hour!"
-  m_rewardHealth: 0
-  m_rewardMindLight: 3
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: d97d4c309ada0489cac401c66d6ee14f, type: 2}

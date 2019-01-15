@@ -26,6 +26,4 @@ MonoBehaviour:
     camels to find enough food, water and shelter to survive. Domestic animals, such
     as cattle and horses, compete with camels for the sparse grasslands available
     near the oasis.
-  m_rewardHealth: 0
-  m_rewardMindLight: 5
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 2d9f9aba82b23465389a70e4cfe40444, type: 2}

@@ -24,6 +24,4 @@ MonoBehaviour:
   m_explanation: While all of the choices have an element of truth in them, the largest
     contribution by anyone not living near the ocean is the amount of pollution that
     finds its way into the waterways. Most waterways lead to the ocean, eventually.
-  m_rewardHealth: 0
-  m_rewardMindLight: 2
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 48c0c36c95b9144918917e4eafe9a357, type: 2}

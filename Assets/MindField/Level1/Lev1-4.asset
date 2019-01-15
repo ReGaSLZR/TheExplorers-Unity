@@ -29,6 +29,4 @@ MonoBehaviour:
     While we haven\u2019t found a complete substitute for using trees to make paper
     products, we can try to use less of them. This means that fewer trees will be
     cut down."
-  m_rewardHealth: 0
-  m_rewardMindLight: 3
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: d97d4c309ada0489cac401c66d6ee14f, type: 2}

@@ -24,6 +24,4 @@ MonoBehaviour:
   m_explanation: "Climate change and the rising temperature of all of the Earth\u2019s
     waters have caused reefs to begin dying. It is called bleaching and it's happening
     all over the planet."
-  m_rewardHealth: 0
-  m_rewardMindLight: 2
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 48c0c36c95b9144918917e4eafe9a357, type: 2}

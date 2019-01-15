@@ -25,6 +25,4 @@ MonoBehaviour:
   m_explanation: Fishermen in many parts of the world still use destructive ways of
     fishing. Many of those fishing practices include blowing up the reef, banging
     on the reef, poisoning the reef, or dragging scoops across the bottom.
-  m_rewardHealth: 0
-  m_rewardMindLight: 2
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 48c0c36c95b9144918917e4eafe9a357, type: 2}

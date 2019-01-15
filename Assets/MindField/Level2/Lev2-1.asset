@@ -23,6 +23,4 @@ MonoBehaviour:
     m_isCorrect: 1
   m_explanation: Currently, 25% of the coral reefs on the planet are damaged beyond
     repair. The rest are considered to be under serious threat.
-  m_rewardHealth: 0
-  m_rewardMindLight: 2
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 48c0c36c95b9144918917e4eafe9a357, type: 2}

@@ -27,6 +27,8 @@ public class SpotHitSkill : SkillBehaviour
 
 	[Inject] Instantiator _instantiator;
 
+	private bool isDead;
+
 	private void Awake() {
 		if(detector == null) {
 			LogUtil.PrintError(gameObject, GetType(), "Missing TargetDetector. Destroying self... :(");
@@ -35,6 +37,8 @@ public class SpotHitSkill : SkillBehaviour
 
 		_animator = GetComponent<Animator>();
 		_audioSource = GetComponent<AudioSource>();
+
+		isDead = false;
 	}
 
 	protected override void UseSkillOnce() {
@@ -49,7 +53,10 @@ public class SpotHitSkill : SkillBehaviour
 
 	protected override void StopSkill() {
 		SafelyPlayKillAnimation(false);
-		StopAllCoroutines();
+
+		if(!isDead) {
+			StopAllCoroutines();
+		}
 	}
 
 	private void OnDisable() {
@@ -69,8 +76,11 @@ public class SpotHitSkill : SkillBehaviour
 			yield return new WaitForSeconds(delayEnd);
 
 			if(destroyOnKill) {
+				isDead = true;
 				_instantiator.InjectPrefab(prefabDestroySub, this.gameObject);
 				Destroy(this.gameObject);
+
+				break;
 			}
 		} while(toRepeat);
 	}

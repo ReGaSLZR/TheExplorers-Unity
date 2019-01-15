@@ -75,6 +75,7 @@ public class MindLightModel : MonoBehaviour,
 		for(int x=0; x<m_textChoices.Length; x++) {
 			MindFieldChoice currentChoice = data.m_choices[x];
 			m_textChoices[x].SetChoice(currentChoice);
+			m_textChoices[x].SetReward(data.m_reward);
 
 			if(currentChoice.m_isCorrect) {
 				m_textAnswerLetter.text = m_textChoices[x].GetChoiceLetter();

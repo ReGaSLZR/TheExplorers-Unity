@@ -26,6 +26,4 @@ MonoBehaviour:
     oxybenzone, which is lethal to reefs, then it would be a start. Saying something,
     making sure that those in charge understand that you are not okay with this happening
     is when change and protection begin to take place on a larger scale.
-  m_rewardHealth: 0
-  m_rewardMindLight: 2
-  m_rewardScore: 100
+  m_reward: {fileID: 11400000, guid: 48c0c36c95b9144918917e4eafe9a357, type: 2}
