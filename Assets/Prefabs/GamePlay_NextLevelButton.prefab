@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sceneIndex: 1
   m_button: {fileID: 114469454755338680}
-  m_clip: {fileID: 8300000, guid: 6e767f762bc6e4801820de1ba615894b, type: 3}
+  m_clip: {fileID: 8300000, guid: 319baf7d1c0274e09a5f1346dd27f7cf, type: 3}
 --- !u!222 &222058844516615154
 CanvasRenderer:
   m_ObjectHideFlags: 1
