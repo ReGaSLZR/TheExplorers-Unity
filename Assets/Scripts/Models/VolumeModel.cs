@@ -39,8 +39,13 @@ public class VolumeModel : MonoBehaviour,
 	}
 
 	private void OnEnable() {
-		m_bgm.Value = PlayerPrefsUtil.GetVolumeBgm();
-		m_sfx.Value = PlayerPrefsUtil.GetVolumeSfx();
+		if(PlayerPrefsUtil.GetVolumeBgm() == 0f) {
+			ResetVolume();
+		}
+		else {
+			m_bgm.Value = PlayerPrefsUtil.GetVolumeBgm();
+			m_sfx.Value = PlayerPrefsUtil.GetVolumeSfx();
+		}
 	}
 
 	private bool IsVolumeValid(float volume) {
