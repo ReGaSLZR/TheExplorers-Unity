@@ -30,6 +30,7 @@ public class HomeBase : MonoBehaviour
 	private void EndLevel() {
 		m_bgmModel.Play(m_clipHomeBase);
 		PlayerPrefsUtil.SaveHighScore(m_playerStats.GetScore().Value);
+		PlayerPrefsUtil.SaveLatestLevel();
 		m_panelSwitcher.ShowLevelClear();
 	}
 

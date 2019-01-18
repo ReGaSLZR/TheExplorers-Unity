@@ -919,7 +919,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260166594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6666684, y: 10.6, z: -15}
+  m_LocalPosition: {x: 2.6666675, y: 10.6, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2012558990}
@@ -4915,7 +4915,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184969682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.267374, y: 10.628599, z: -15}
+  m_LocalPosition: {x: 10.267372, y: 10.628599, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 513034098}
@@ -6227,11 +6227,6 @@ Prefab:
 --- !u!224 &1250998976 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224667663799725402, guid: 0a078ea1facb04c87a7a35ecf3cc0d80,
-    type: 2}
-  m_PrefabInternal: {fileID: 1250998975}
---- !u!4 &1250998977 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4038438949982488, guid: 0a078ea1facb04c87a7a35ecf3cc0d80,
     type: 2}
   m_PrefabInternal: {fileID: 1250998975}
 --- !u!1 &1253139687
@@ -9464,15 +9459,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114860648214527546, guid: ecbed5f9555d54c98bf9533ac3ed8831,
+        type: 2}
+      propertyPath: m_sceneIndex
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecbed5f9555d54c98bf9533ac3ed8831, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1620408886 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114469454755338680, guid: ecbed5f9555d54c98bf9533ac3ed8831,
-    type: 2}
-  m_PrefabInternal: {fileID: 1620408885}
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1634125289
 GameObject:
   m_ObjectHideFlags: 0
@@ -11375,49 +11369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2043991906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2043991907}
-  - component: {fileID: 2043991908}
-  m_Layer: 0
-  m_Name: Next Level Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2043991907
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2043991906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1250998977}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043991908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2043991906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522e138b48d764733a0e8f46d4c9ab46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_sceneIndex: 4
-  m_button: {fileID: 1620408886}
-  m_clip: {fileID: 8300000, guid: 6e767f762bc6e4801820de1ba615894b, type: 3}
 --- !u!1001 &2049458686
 Prefab:
   m_ObjectHideFlags: 0
