@@ -219,7 +219,7 @@ MonoBehaviour:
   prefabDestroySub: {fileID: 0}
   delayStart: 0.1
   delayEnd: 0.9
-  clipAttack: {fileID: 0}
+  clipAttack: {fileID: 8300000, guid: 916e9f3e3319b4dc38e746a635ec816a, type: 3}
   animationAttack: isTriggered
 --- !u!212 &212493944231740750
 SpriteRenderer:

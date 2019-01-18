@@ -293,7 +293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 1592601865281932, guid: 68bfd390ea678458b8fcac02cc7aa4f6,
     type: 2}
-  clipsThrow: []
+  clipsThrow:
+  - {fileID: 8300000, guid: 891e65198aeab49bdae3ba7a037b904b, type: 3}
   animationParam: isAttacking
   force: -800
   torque: 1
@@ -326,12 +327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afd623532436455b8df6b08c16fcece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
   hitCount: 1
   animationDeath: isHurt
   clipsDeath:
-  - {fileID: 8300000, guid: 1df19883a417d4723ab2112904c8ac3d, type: 3}
-  - {fileID: 8300000, guid: a2599ab3f44e54b27a3b7569a65e1237, type: 3}
+  - {fileID: 8300000, guid: 9f6346fb87072427e98dbb5b0df87f78, type: 3}
+  - {fileID: 8300000, guid: 250cf79adee424343bc2b7912aba07ba, type: 3}
   delayDeath: 1
   prefabDeathSubstitute: {fileID: 0}
   spawnObjects: []

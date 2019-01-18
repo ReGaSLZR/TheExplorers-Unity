@@ -366,13 +366,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7483dc9f703a6486b8952be87c541446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
   animHit: isHurt
   clipsHit:
-  - {fileID: 8300000, guid: 7793da62c5c1d4635839c9906c827ee7, type: 3}
+  - {fileID: 8300000, guid: 0dcc86c673dfb456aa137c23ed081639, type: 3}
   animDeath: isHurt
   clipsDead:
-  - {fileID: 8300000, guid: 7793da62c5c1d4635839c9906c827ee7, type: 3}
+  - {fileID: 8300000, guid: 10ce7f4c8aa06420aa77c03087890e74, type: 3}
   delayDestroyOnDeath: 0.5
 --- !u!114 &114083291165776556
 MonoBehaviour:

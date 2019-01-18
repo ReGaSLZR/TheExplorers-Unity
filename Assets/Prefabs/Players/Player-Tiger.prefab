@@ -368,10 +368,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animHit: isHurt
   clipsHit:
-  - {fileID: 8300000, guid: 7793da62c5c1d4635839c9906c827ee7, type: 3}
+  - {fileID: 8300000, guid: e1a3bd1ea67db4dcfa6fd8ada0357f7d, type: 3}
   animDeath: isHurt
   clipsDead:
-  - {fileID: 8300000, guid: 7793da62c5c1d4635839c9906c827ee7, type: 3}
+  - {fileID: 8300000, guid: e1a3bd1ea67db4dcfa6fd8ada0357f7d, type: 3}
   delayDestroyOnDeath: 0.5
 --- !u!114 &114847531293532762
 MonoBehaviour:
@@ -386,7 +386,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 1058966231962108, guid: 4ca7252951afd45e39776d4a7f54828a,
     type: 2}
-  clipsThrow: []
+  clipsThrow:
+  - {fileID: 8300000, guid: 2ce67dfe3393346f785391f304f8393a, type: 3}
   animationParam: isAttacking
   force: 200
   torque: 1

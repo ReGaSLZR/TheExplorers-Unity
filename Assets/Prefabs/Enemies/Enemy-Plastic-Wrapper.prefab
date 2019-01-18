@@ -175,7 +175,7 @@ MonoBehaviour:
   prefabDestroySub: {fileID: 0}
   delayStart: 0.1
   delayEnd: 0.75
-  clipAttack: {fileID: 8300000, guid: 2b63eb1d7f0944b0086d7a34be238825, type: 3}
+  clipAttack: {fileID: 8300000, guid: 333266ffb99694f31b024a293728b1f0, type: 3}
   animationAttack: isAttacking
 --- !u!114 &114619051572818638
 MonoBehaviour:

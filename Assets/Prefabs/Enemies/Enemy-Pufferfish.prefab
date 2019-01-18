@@ -253,12 +253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afd623532436455b8df6b08c16fcece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
   hitCount: 1
   animationDeath: isHurt
   clipsDeath:
-  - {fileID: 8300000, guid: 1df19883a417d4723ab2112904c8ac3d, type: 3}
-  - {fileID: 8300000, guid: a2599ab3f44e54b27a3b7569a65e1237, type: 3}
+  - {fileID: 8300000, guid: 63cb61cf415994a609690477a8102a97, type: 3}
+  - {fileID: 8300000, guid: 893d92baaad214911960d365d0adccb7, type: 3}
+  - {fileID: 8300000, guid: 08a4748f5cc124660ad8db5e607239e7, type: 3}
   delayDeath: 1
   prefabDeathSubstitute: {fileID: 0}
   spawnObjects: []
@@ -294,7 +294,7 @@ MonoBehaviour:
   prefabDestroySub: {fileID: 0}
   delayStart: 0.1
   delayEnd: 1
-  clipAttack: {fileID: 8300000, guid: 2b63eb1d7f0944b0086d7a34be238825, type: 3}
+  clipAttack: {fileID: 8300000, guid: 9cc46ba7c003c4ce9b5fe52bd3f82499, type: 3}
   animationAttack: isAttacking
 --- !u!212 &212691506358693132
 SpriteRenderer:
