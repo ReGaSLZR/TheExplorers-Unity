@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Lev4-Rewards
   m_EditorClassIdentifier: 
   m_health: 0
-  m_mindLight: 2
+  m_mindLight: 3
   m_score: 500

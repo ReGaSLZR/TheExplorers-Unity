@@ -30,6 +30,7 @@ public class MainMenu_LevelButton : MonoBehaviour {
 		}
 
 		m_isLoading = false;
+		CheckIfUnlocked();
 	}
 
 	private void OnEnable() {
@@ -43,6 +44,10 @@ public class MainMenu_LevelButton : MonoBehaviour {
 				m_sceneModel.LoadScene(m_sceneIndex);
 			})
 			.AddTo(this);
+	}
+
+	private void CheckIfUnlocked() {
+		m_button.interactable = (m_sceneIndex <= (PlayerPrefsUtil.GetLatestLevel() + 1));
 	}
 
 }

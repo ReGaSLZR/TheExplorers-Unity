@@ -57,6 +57,10 @@ public class SpotHitSkill : SkillBehaviour
 		if(!isDead) {
 			StopAllCoroutines();
 		}
+		else if(destroyOnKill) {
+			_instantiator.InjectPrefab(prefabDestroySub, this.gameObject);
+			Destroy(this.gameObject);
+		}
 	}
 
 	private void OnDisable() {

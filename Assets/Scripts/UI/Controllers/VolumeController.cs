@@ -26,8 +26,11 @@ public class VolumeController : MonoBehaviour
 	}
 
 	private void OnEnable() {
-		SetSliderDefaultValues();
 		SetSliderListeners();
+	}
+
+	private void Start() {
+		SetSliderDefaultValues();
 	}
 
 	private void SetSliderDefaultValues() {
@@ -36,12 +39,12 @@ public class VolumeController : MonoBehaviour
 	}
 
 	private void SetSliderListeners() {
-		m_SliderBGM.OnValueChangedAsObservable()
-			.Subscribe(value => m_volumeSetter.SetVolumeBgm(value))
+		m_SliderBGM.OnPointerUpAsObservable()
+			.Subscribe(_ => m_volumeSetter.SetVolumeBgm(m_SliderBGM.value))
 			.AddTo(this);	
 
-		m_SliderSFX.OnValueChangedAsObservable()
-			.Subscribe(value => m_volumeSetter.SetVolumeSfx(value))
+		m_SliderSFX.OnPointerUpAsObservable()
+			.Subscribe(_ => m_volumeSetter.SetVolumeSfx(m_SliderSFX.value))
 			.AddTo(this);	
 	}
 

@@ -101,7 +101,7 @@ public class NPCKillable : KillableBehaviour {
 
 	private IEnumerator CorDelaySpawnOnDeath() {
 		_rigidBody2D.bodyType = RigidbodyType2D.Static;
-		isDead = true;
+		isDead.Value = true;
 
 		yield return new WaitForSeconds(delayDeath);
 

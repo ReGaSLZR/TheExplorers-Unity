@@ -13,6 +13,9 @@ public class HomeBase : MonoBehaviour
 	[Inject]
 	BGMModel.Setter m_bgmModel;
 
+	[Inject]
+	PlayerStatsModel.Getter m_playerStats;
+
 	[SerializeField]
 	private AudioClip m_clipHomeBase;
 
@@ -26,6 +29,7 @@ public class HomeBase : MonoBehaviour
 
 	private void EndLevel() {
 		m_bgmModel.Play(m_clipHomeBase);
+		PlayerPrefsUtil.SaveHighScore(m_playerStats.GetScore().Value);
 		m_panelSwitcher.ShowLevelClear();
 	}
 

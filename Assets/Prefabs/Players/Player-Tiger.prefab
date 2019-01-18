@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1998043443525020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.62, z: 0}
+  m_LocalPosition: {x: 0, y: -1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4315884539687244}
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.15321921}
+  m_Offset: {x: 0, y: 0.08952351}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -184,7 +184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.973194, y: 0.29743174}
+  m_Size: {x: 2.973194, y: 0.42482314}
   m_EdgeRadius: 0
 --- !u!61 &61534529961295960
 BoxCollider2D:
@@ -248,8 +248,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000009142873, y: -0.076695986}
-  m_Size: {x: 4.680003, y: 2.292608}
+  m_Offset: {x: -0.000000002847417, y: -0.023885867}
+  m_Size: {x: 3.9559436, y: 2.3403883}
   m_Direction: 1
 --- !u!81 &81377931440739316
 AudioListener:
@@ -366,7 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7483dc9f703a6486b8952be87c541446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
   animHit: isHurt
   clipsHit:
   - {fileID: 8300000, guid: 7793da62c5c1d4635839c9906c827ee7, type: 3}
@@ -431,12 +430,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b6d75a7ab344b6ba75844dfdbed9e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 170
+  walkSpeed: 180
   normalFrictionDrag: 1
   wallSlideFriction: 10
   wallSlideClip: {fileID: 0}
   jumpSpeed: 1
-  jumpHeight: 90
+  jumpHeight: 100
   clipsJump: []
   prefabJumpFX: {fileID: 0}
   originJumpFX: {fileID: 0}

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UniRx;
 
 public abstract class KillableBehaviour : MonoBehaviour {
 
-	public bool isDead;
+	public ReactiveProperty<bool> isDead {protected set; get;}
 
 	public abstract void DisableMovement();
 	public abstract void EnableMovement();
@@ -10,8 +11,8 @@ public abstract class KillableBehaviour : MonoBehaviour {
 	public abstract void HitOnce();
 	public abstract void KillOnce();
 
-	private void Awake() {
-		isDead = false;
+	public KillableBehaviour() {
+		isDead = new ReactiveProperty<bool>(false);
 	}
 
 }

@@ -38,6 +38,11 @@ public class VolumeModel : MonoBehaviour,
 		ResetVolume();
 	}
 
+	private void OnEnable() {
+		m_bgm.Value = PlayerPrefsUtil.GetVolumeBgm();
+		m_sfx.Value = PlayerPrefsUtil.GetVolumeSfx();
+	}
+
 	private bool IsVolumeValid(float volume) {
 		bool isValid = ((volume <= TheExplorersConfig.VOLUME_MAX) && (volume >= TheExplorersConfig.VOLUME_MIN));
 		LogUtil.PrintInfo(this.gameObject, this.GetType(), "IsVolumeValid(): " + volume + " == " + isValid);
@@ -61,12 +66,14 @@ public class VolumeModel : MonoBehaviour,
 		LogUtil.PrintInfo(this.gameObject, this.GetType(), "SetVolumeBgm()");
 
 		m_bgm.Value = IsVolumeValid(volumeBgm) ? volumeBgm : m_bgm.Value;
+		PlayerPrefsUtil.SaveVolumeBgm(m_bgm.Value);
 	}
 
 	public void SetVolumeSfx(float volumeSfx) {
 		LogUtil.PrintInfo(this.gameObject, this.GetType(), "SetVolumeSfx()");
 
 		m_sfx.Value = IsVolumeValid(volumeSfx) ? volumeSfx : m_sfx.Value;
+		PlayerPrefsUtil.SaveVolumeSfx(m_sfx.Value);
 	}
 
 	public void ResetVolume() {

@@ -59,6 +59,7 @@ public class PlayerKillable : KillableBehaviour
 				StartCoroutine(CorApplyDeath());
 
 				panelSwitcher.ShowGameOver();
+				PlayerPrefsUtil.SaveHighScore(playerStatsGetter.GetScore().Value);
 				bgmSetter.Pause();
 			})
 			.AddTo(this);

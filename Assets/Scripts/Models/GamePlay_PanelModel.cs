@@ -132,6 +132,7 @@ public class GamePlay_PanelModel : MonoBehaviour,
 
 	public void ShowLevelClear() {
 		ShowEndGamePanel(true);
+		PlayerPrefsUtil.SaveLatestLevel();
 	}
 		
 	public void ShowLoading() {

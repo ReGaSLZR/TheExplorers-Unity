@@ -37,6 +37,16 @@ public class CharacterAI : AIBehaviour {
 			LogUtil.PrintWarning(gameObject, GetType(), "No TargetDetector defined. Reverting to Patrol.");
 			Patrol();
 		}
+
+		if(killableBehaviour != null) {
+			killableBehaviour.isDead
+				.Where(isNowDead => isNowDead)
+				.Subscribe(_ => {
+					StopSkillBehaviour();
+					StopPatrolBehaviour();
+				})
+				.AddTo(this);
+		}
 	}
 
 	private void FaceTarget() {
@@ -47,8 +57,13 @@ public class CharacterAI : AIBehaviour {
 	}
 
 	private void Patrol() {
-		StopSkillBehaviour();
-		StartPatrolBehaviour();
+		if(IsKillableDead()) {
+			return;
+		}
+		else {
+			StopSkillBehaviour();
+			StartPatrolBehaviour();
+		}
 	}
 
 	private void UseSkill() {
@@ -56,8 +71,12 @@ public class CharacterAI : AIBehaviour {
 		StartSkillBehaviour();
 	}
 
+	private bool IsKillableDead() {
+		return (killableBehaviour != null) && (killableBehaviour.isDead.Value);
+	}
+
 	private void StartSkillBehaviour() {
-		if((killableBehaviour != null) && (killableBehaviour.isDead)) {
+		if(IsKillableDead()) {
 			return;
 		}
 
