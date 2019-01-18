@@ -4,16 +4,13 @@ using UniRx;
 using UniRx.Triggers;
 using Zenject;
 
-public class MainMenu_LevelButton : MonoBehaviour {
+public abstract class LevelButton : MonoBehaviour {
 
 	[Inject]
 	SFXModel.Setter m_sfxModel;
 
 	[Inject]
 	SceneModel.Setter m_sceneModel;
-
-	[Inject]
-	MainMenu_PanelModel.Setter m_buttonsHandler;
 
 	[SerializeField]
 	private int m_sceneIndex = 1;
@@ -24,30 +21,35 @@ public class MainMenu_LevelButton : MonoBehaviour {
 
 	private bool m_isLoading;
 
+	protected abstract void OnLevelButtonClick();
+
 	private void Awake() {
 		if(m_button == null) {
 			LogUtil.PrintError(this.gameObject, this.GetType(), "Awake(): Button is NULL.");
 		}
 
 		m_isLoading = false;
-		CheckIfUnlocked();
 	}
 
-	private void OnEnable() {
-		m_button.OnPointerUpAsObservable()
+	protected void CheckIfUnlocked() {
+		LogUtil.PrintInfo(this.gameObject, this.GetType(), "CheckIfUnlocked(): Latest Level cleared is: " + PlayerPrefsUtil.GetLatestLevel());
+		m_button.interactable = (m_sceneIndex <= (PlayerPrefsUtil.GetLatestLevel() + 1));
+	}
+
+	protected void RegisterOnClickListener() {
+		m_button.OnClickAsObservable()
 			.Where(_ => !m_isLoading)
 			.Subscribe(_ => {
+				LogUtil.PrintInfo(this.gameObject, this.GetType(), 
+					"OnEnable(): level button has been clicked. Loading scene " + m_sceneIndex);
 				m_isLoading = true;
 
 				m_sfxModel.PlaySFX(m_clip);
-				m_buttonsHandler.DisableAllElements();
+
+				OnLevelButtonClick();
 				m_sceneModel.LoadScene(m_sceneIndex);
 			})
 			.AddTo(this);
-	}
-
-	private void CheckIfUnlocked() {
-		m_button.interactable = (m_sceneIndex <= (PlayerPrefsUtil.GetLatestLevel() + 1));
 	}
 
 }
