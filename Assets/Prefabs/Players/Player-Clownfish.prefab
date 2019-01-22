@@ -378,7 +378,7 @@ MonoBehaviour:
   jumpTimesMax: 99999
   jumpsLeft: 99999
   jumpInterval: 0.1
-  paramIsWalking: isMoving
+  paramIsWalking: 
   paramIsGrounded: isGrounded
   paramIsWallSliding: 
 --- !u!114 &114158575235230680

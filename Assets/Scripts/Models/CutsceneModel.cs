@@ -36,6 +36,8 @@ public class CutsceneModel : MonoBehaviour,
 	[SerializeField]
 	private Button m_buttonNext;
 	[SerializeField]
+	private Button m_buttonSkip;
+	[SerializeField]
 	private CutsceneLineFeeder m_lineFeeder;
 	[SerializeField]
 	private RawImage m_avatar;
@@ -61,9 +63,11 @@ public class CutsceneModel : MonoBehaviour,
 
 	private void OnEnable() {
 		m_buttonNext.OnPointerClickAsObservable()
-			.Subscribe(_ => {
-				PlayNextLine();
-			})
+			.Subscribe(_ => PlayNextLine())
+			.AddTo(this);
+
+		m_buttonSkip.OnPointerClickAsObservable()
+			.Subscribe(_ => EndSequence())
 			.AddTo(this);
 	}
 
@@ -113,9 +117,13 @@ public class CutsceneModel : MonoBehaviour,
 			LogUtil.PrintInfo(this.gameObject, this.GetType(), 
 				"All CutsceneLines played OR next Line is NULL. Ending sequence.");
 
-			rIsDone.Value = true;
-			PlayCutsceneAnimation(false);
+			EndSequence();
 		}
+	}
+
+	private void EndSequence() {
+		rIsDone.Value = true;
+		PlayCutsceneAnimation(false);
 	}
 
 	private void ChangeDisplay() {

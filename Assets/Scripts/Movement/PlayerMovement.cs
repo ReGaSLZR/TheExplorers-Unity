@@ -90,23 +90,19 @@ public class PlayerMovement : MonoBehaviour
 			.Subscribe(isOnGround => AnimateChangeGround(paramIsGrounded, isOnGround))
 			.AddTo(this);
 
-		groundObserver.IsWallSliding()
-			.Subscribe(isSliding => { 
-				AnimateChangeGround(paramIsWallSliding, isSliding);
+		if(StringUtil.IsNonNullNonEmpty(paramIsWallSliding)){
+			groundObserver.IsWallSliding()
+				.Subscribe(isSliding => { 
+					AnimateChangeGround(paramIsWallSliding, isSliding);
 
-				if(isSliding && (playerInput.movement == 0)) {
-					CheckFlipHorizontal(playerInput.movement);
-				}
+					if(isSliding && (playerInput.movement == 0)) {
+						CheckFlipHorizontal(playerInput.movement);
+					}
 
-				ApplyWallSlide(isSliding);
-			})
-			.AddTo(this);
-
-		//TODO ren implement Player character Hang
-		//		groundObserver.IsHanging()
-		//			.Subscribe(isHanging => AnimateHangTime(isHanging))
-		//			.AddTo(this);
-
+					ApplyWallSlide(isSliding);
+				})
+				.AddTo(this);
+		}
 	}
 
 	private void AnimateHangTime(bool isHanging) {
@@ -114,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	private void AnimateIdleMovement() {
-		if(animator.GetBool(paramIsWalking)) {
+		if((StringUtil.IsNonNullNonEmpty(paramIsWalking)) && (animator.GetBool(paramIsWalking))) {
 			animator.SetBool(paramIsWalking, false);
 		}
 	}
@@ -122,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
 	private void AnimateHorizontalMovement(float horizontalMovement) {
 		bool isSliding = (horizontalMovement != 0);
 
-		if(isSliding != animator.GetBool(paramIsWalking)) { //to prevent jitter
+		if((StringUtil.IsNonNullNonEmpty(paramIsWalking)) && (isSliding != animator.GetBool(paramIsWalking))) { //to prevent jitter
 			animator.SetBool(paramIsWalking, isSliding);
 		}
 	}

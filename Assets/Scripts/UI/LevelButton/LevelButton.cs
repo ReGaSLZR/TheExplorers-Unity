@@ -13,6 +13,8 @@ public abstract class LevelButton : MonoBehaviour {
 	SceneModel.Setter m_sceneModel;
 
 	[SerializeField]
+	private bool m_shouldCheckClearedLevels = true;
+	[SerializeField]
 	private int m_sceneIndex = 1;
 	[SerializeField]
 	private Button m_button;
@@ -32,8 +34,14 @@ public abstract class LevelButton : MonoBehaviour {
 	}
 
 	protected void CheckIfUnlocked() {
-		LogUtil.PrintInfo(this.gameObject, this.GetType(), "CheckIfUnlocked(): Latest Level cleared is: " + PlayerPrefsUtil.GetLatestLevel());
-		m_button.interactable = (m_sceneIndex <= (PlayerPrefsUtil.GetLatestLevel() + 1));
+		if(m_shouldCheckClearedLevels) {
+			LogUtil.PrintInfo(this.gameObject, this.GetType(), "CheckIfUnlocked(): Latest Level cleared is: " + PlayerPrefsUtil.GetLatestLevel());
+			m_button.interactable = (m_sceneIndex <= (PlayerPrefsUtil.GetLatestLevel() + 1));
+		}
+		else {
+			LogUtil.PrintInfo(this.gameObject, this.GetType(), "CheckIfUnlocked(): NOT checking latest level cleared.");
+			m_button.interactable = true;
+		}
 	}
 
 	protected void RegisterOnClickListener() {
