@@ -7358,6 +7358,7 @@ Transform:
   - {fileID: 1277297682}
   - {fileID: 1961851807}
   - {fileID: 1147843838}
+  - {fileID: 1146458999}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8798,6 +8799,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 458839f10039a47e19de9daf037da420, type: 2}
   m_IsPrefabParent: 0
@@ -9002,6 +9007,184 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1146458998
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 910022981}
+    m_Modifications:
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[0].focusedObject
+      value: 
+      objectReference: {fileID: 746786959}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[1].focusedObject
+      value: 
+      objectReference: {fileID: 2004421833}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[3].focusedObject
+      value: 
+      objectReference: {fileID: 1390019268}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[4].focusedObject
+      value: 
+      objectReference: {fileID: 1604801914}
+    - target: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_Name
+      value: Trigger1 - INTRO-revamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[3].cutsceneText
+      value: Build up your mindlight points with encounter questions when you see
+        the glowing mindlight.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[5].cutsceneText
+      value: Press <Spacebar> to shoot your MindLight which can defeat enemies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[0].cutsceneText
+      value: Help the toucan get home to his nest!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[0].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 485518772ba34499187e88fc9ad2e841, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[1].cutsceneText
+      value: Use the <Arrow Keys> to move. Use the <Escape> button to return to the
+        main menu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[1].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 485518772ba34499187e88fc9ad2e841, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[2].cutsceneText
+      value: Beware of snakes, jaguars and other dangers! Shoot your mindlight by
+        using the <Spacebar>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[2].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 485518772ba34499187e88fc9ad2e841, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[3].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 485518772ba34499187e88fc9ad2e841, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[4].cutsceneText
+      value: Eat berries for health points! Stay away from the poisoned berries.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[4].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 485518772ba34499187e88fc9ad2e841, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[5].avatar
+      value: 
+      objectReference: {fileID: 2800000, guid: 31133390b80ee4901b63f10d12771288, type: 3}
+    - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
+        type: 2}
+      propertyPath: m_lines.Array.data[2].focusedObject
+      value: 
+      objectReference: {fileID: 398959963}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 458839f10039a47e19de9daf037da420, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1146458999 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4193747757713956, guid: 458839f10039a47e19de9daf037da420,
+    type: 2}
+  m_PrefabInternal: {fileID: 1146458998}
+--- !u!1 &1146459000 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420,
+    type: 2}
+  m_PrefabInternal: {fileID: 1146458998}
+--- !u!61 &1146459001
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146459000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -10.239277, y: 2.99}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.383747, y: 14.164764}
+  m_EdgeRadius: 0
 --- !u!1001 &1147843837
 Prefab:
   m_ObjectHideFlags: 0
@@ -9052,7 +9235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
         type: 2}
@@ -9186,7 +9369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184969682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.2486, y: 15.617808, z: -15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 513034098}
@@ -9246,10 +9429,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 2500
-  field of view: 102
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
-  orthographic size: 17
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17051,7 +17234,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1345299546317534, guid: 458839f10039a47e19de9daf037da420, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114296049298167082, guid: 458839f10039a47e19de9daf037da420,
         type: 2}
